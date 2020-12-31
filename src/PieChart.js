@@ -6,8 +6,8 @@ import { Pie } from 'react-chartjs-2';
 export default function PiChart(props) {
 
     if (Object.keys(props.data).length === 0) {
-        return (<h2 color="bloack">
-            Please wait...
+        return (<h2 color="black">
+           
         </h2>
         )
     }
@@ -15,7 +15,7 @@ export default function PiChart(props) {
     var labelsData = [];
     var countData = [];
 
-    props.data.list.map((obj, i) => {
+    props.data.list.forEach((obj, i) => {
         labelsData[i] = obj.title;
         countData[i] = obj.count;
     })

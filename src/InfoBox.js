@@ -29,8 +29,8 @@ function InfoBox(props) {
 
 
     if (Object.keys(props.data).length === 0) {
-        return (<h2 color="bloack">
-            Please wait...
+        return (<h2 color="black">
+           
         </h2>
         )
     }

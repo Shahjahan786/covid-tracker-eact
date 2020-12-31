@@ -35,7 +35,8 @@ export default function CountryPicker(props) {
             <NativeSelect
                 defaultValue=""
                 onChange={(e) => props.handleChange(e.target.value)}>
-                <option value="">Global</option>
+                <option value="Select">Select</option>
+                <option value="Global">Global</option>
                 {countries.map((country, i) => (
                     <option key={i} value={country.name}>
                         {country.name}

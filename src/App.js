@@ -1,4 +1,4 @@
-import {useEffect, useState } from "react";
+import {useState} from "react";
 import Header from "./Header";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import React from 'react'
@@ -50,11 +50,7 @@ function App() {
   }
 
 
-  useEffect(() => {
-    getGlobalData();
-    
-  },[])
-
+  
 
   return (
     <React.Fragment >
@@ -67,7 +63,7 @@ function App() {
 
       <CountryPicker handleChange={(country) => {
           console.log("Value: " + country);
-          if(country === ""){
+          if(country === "Global" || country === "Select"){
             getGlobalData();
           }else{
             getCountryData(country);
