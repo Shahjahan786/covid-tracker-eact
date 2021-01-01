@@ -42,9 +42,9 @@ function App() {
     return {
       lastUpaded: json.updated,
       list: [
-        {title: "Total Cases", count: json.cases, color:"#FFCE56"},
-        {title: "Total Deaths", count: json.deaths, color:"#FF6384"},
-        {title: "Total Recoveries", count: json.recovered, color:"#36A2EB"}
+        {title: "Cases", count: json.cases, color:"#FFCE56"},
+        {title: "Deaths", count: json.deaths, color:"#FF6384"},
+        {title: "Recoveries", count: json.recovered, color:"#36A2EB"}
       ],
     }
   }
